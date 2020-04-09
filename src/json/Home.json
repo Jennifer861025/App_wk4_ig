@@ -20,7 +20,8 @@
             "Angel": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Angel.png?raw=true",
             "Video": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Video.png?raw=true",
             "Edit": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Edit.png?raw=true",
-            "Camera" : "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Camera.png?raw=true"
+            "Camera": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Camera.png?raw=true",
+            "SearchGray": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/SearchGray.png?raw=true"
         }
     ],
     "PostDetail":[
@@ -62,12 +63,12 @@
         {
             "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/MessagePerson/images-3.png?raw=true",
             "PersonId": "sjdjo00288",
-            "Content": "Liked a message. 4d"
+            "Content": "Liked a message.   4d"
         },
         {
             "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/MessagePerson/images-4.png?raw=true",
             "PersonId": "jennifer828",
-            "Content": "Mentiond you in their story. 2w"
+            "Content": "Mentiond you in their story.   2w"
         },
         {
             "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/MessagePerson/images.jpeg?raw=true",
@@ -77,7 +78,7 @@
         {
             "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/MessagePerson/images.png?raw=true",
             "PersonId": "sanjij3862",
-            "Content": "You: Good. 2w"
+            "Content": "You: Good.   2w"
         }
     ]
 }

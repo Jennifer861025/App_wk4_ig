@@ -104,6 +104,8 @@ const styles = StyleSheet.create({
     alignItems:'center',
     height:40,
     paddingLeft:15,
-    paddingRight:15
+    paddingRight:15,
+    borderTopWidth:0.5,
+    borderTopColor:"#E6E6E6"
   }
 });

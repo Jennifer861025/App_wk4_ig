@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image , TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image , TouchableOpacity ,FlatList} from 'react-native';
 import HomeData from "../json/Home.json";
+import MessageDetailJs from "../components/MessageDetail"
 
 export default function MessageScreen({navigation}) {
   return (
@@ -10,7 +11,7 @@ export default function MessageScreen({navigation}) {
                 onPress={() => navigation.navigate('Home')}
             >
                 <Image
-                    style={styles.iconStyle18}
+                    style={styles.iconStyle16}
                     source={{uri:HomeData.Icon[0].Angel}}
                 />
             </TouchableOpacity>
@@ -29,18 +30,20 @@ export default function MessageScreen({navigation}) {
         <View style={styles.SearchBoxAreaStyle}>
             <View style={styles.SearchBoxStyle}>
                 <Image
-                    style={styles.iconStyle18}
-                    source={{uri:HomeData.Icon[0].Search}}
+                    style={styles.iconStyle16}
+                    source={{uri:HomeData.Icon[0].SearchGray}}
                 />
                 <Text style={styles.SearchTextStyle}>搜尋</Text>
             </View>
         </View>
-        <View>
-                    <Image
-                    style={styles.Photo}
-                    source={{uri:HomeData.MessageDetail[3].PersonUrl}}
-                    />
-                </View>
+        <FlatList
+        data={HomeData.MessageDetail}
+        renderItem={({ item }) => 
+        <MessageDetailJs 
+          Message={item}       
+        />}
+        keyExtractor={item => item.PersonId}
+      />
       </View>
   )
 }
@@ -64,10 +67,6 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         elevation: 2
       },
-      iconStyle30: {
-        width:30,
-        height:30,
-      },
       iconStyle24: {
         width:24,
         height:24,
@@ -79,6 +78,10 @@ const styles = StyleSheet.create({
       iconStyle18: {
         width:18,
         height:18,
+      },
+      iconStyle16: {
+        width:16,
+        height:16,
       },
       iconEditStyle:{
         width:24,
@@ -113,9 +116,4 @@ const styles = StyleSheet.create({
           marginLeft:6,
           color:'#858585'
       },
-      Photo:{
-          width:50,
-          height:50,
-          borderRadius:50
-      }
 });
