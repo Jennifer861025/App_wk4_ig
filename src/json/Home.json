@@ -16,7 +16,11 @@
             "Home": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Home.jpeg?raw=true",
             "Search": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Search.png?raw=true",
             "Add": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Add.png?raw=true",
-            "Person": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Person.png?raw=true"
+            "Person": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Person.png?raw=true",
+            "Angel": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Angel.png?raw=true",
+            "Video": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Video.png?raw=true",
+            "Edit": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Edit.png?raw=true",
+            "Camera" : "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Camera.png?raw=true"
         }
     ],
     "PostDetail":[
@@ -24,29 +28,56 @@
             "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/HomePerson/photo.jpg-3.png?raw=true",
             "PersonId": "kaoru_0908",
             "PhotoUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Photo/IMG_3667.jpg?raw=true",
-            "HeartNumber": "177個讚",
+            "HeartNumber": "1,177 likes",
             "Content": "Snoopy好可愛喔><"
         },
         {
             "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/HomePerson/photo.jpg-4.png?raw=true",
             "PersonId": "ojeojf77",
             "PhotoUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Photo/IMG_3669.jpg?raw=true",
-            "HeartNumber": "81個讚",
+            "HeartNumber": "3,481 likes",
             "Content": "我的最新作品，希望大家會喜歡><"
         },
         {
             "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/HomePerson/photo.jpg.png?raw=true",
             "PersonId": "hewmo999",
             "PhotoUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Photo/IMG_3668.jpg?raw=true",
-            "HeartNumber": "66個讚",
+            "HeartNumber": "87,366 likes",
             "Content": "其實我是一隻阿圓啦！哈哈哈><"
         },
         {
             "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/HomePerson/photo.jpg-2.png?raw=true",
             "PersonId": "tim77765",
             "PhotoUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Photo/IMG_3670.jpg?raw=true",
-            "HeartNumber": "43個讚",
+            "HeartNumber": "2,243 likes",
             "Content": "吃吃吃吃吃，冬天就是要吃吃"
+        }
+    ],
+    "MessageDetail":[
+        {
+            "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/MessagePerson/images-2.png?raw=true",
+            "PersonId": "dsht7192",
+            "Content": "Active 5h ago"
+        },
+        {
+            "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/MessagePerson/images-3.png?raw=true",
+            "PersonId": "sjdjo00288",
+            "Content": "Liked a message. 4d"
+        },
+        {
+            "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/MessagePerson/images-4.png?raw=true",
+            "PersonId": "jennifer828",
+            "Content": "Mentiond you in their story. 2w"
+        },
+        {
+            "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/MessagePerson/images.jpeg?raw=true",
+            "PersonId": "jessic3729",
+            "Content": "Active today"
+        },
+        {
+            "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/MessagePerson/images.png?raw=true",
+            "PersonId": "sanjij3862",
+            "Content": "You: Good. 2w"
         }
     ]
 }

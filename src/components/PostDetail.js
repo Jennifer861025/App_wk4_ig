@@ -52,7 +52,7 @@ export default function PostDetail({Post}) {
                 </View>
             </View>
             <View style={styles.HeartNumberStyle}>
-                <Text>{Post.HeartNumber}</Text>
+                <Text style={styles.HeartNumberTextStyle}>{Post.HeartNumber}</Text>
             </View>
             <View style={styles.ContentStyle}>
                 <Text style={styles.PersonIdStyle}>
@@ -133,6 +133,9 @@ const styles = StyleSheet.create({
       justifyContent:'flex-start',
       alignItems:'center',
       paddingLeft:12,
+  },
+  HeartNumberTextStyle:{
+    fontWeight:'600',
   },
   ContentStyle:{
       flexDirection:'row',
