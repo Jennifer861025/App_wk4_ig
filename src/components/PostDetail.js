@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image ,ScrollView } from 'react-native';
 import HomeData from "../json/Home.json";
 
-export default function PostDetail() {
+export default function PostDetail({Post}) {
   return (
     <ScrollView>
         <View style={styles.PostContainerStyle}>
@@ -10,10 +10,10 @@ export default function PostDetail() {
                 <View style={styles.PersonDetailStyle}>
                     <Image
                     style={styles.PersonImageStyle}
-                    source={{uri:HomeData.PostDetail[0].PersonUrl}}
+                    source={{uri:Post.PersonUrl}}
                     />
                     <Text style={styles.PersonIdStyle}>
-                        {HomeData.PostDetail[0].PersonId}
+                        {Post.PersonId}
                     </Text>
                 </View>
                 <View>
@@ -26,7 +26,7 @@ export default function PostDetail() {
             <View>
             <Image
                 style={styles.PhotoStyle}
-                source={{uri:HomeData.PostDetail[0].PhotoUrl}}
+                source={{uri:Post.PhotoUrl}}
             />
             </View>
             <View style={styles.AllofIconStyle}>
@@ -40,7 +40,7 @@ export default function PostDetail() {
                     source={{uri:HomeData.Icon[0].Answer}}
                     />
                     <Image
-                    style={styles.iconStyle24}
+                    style={styles.iconMessageStyle}
                     source={{uri:HomeData.Icon[0].Message}}
                     />
                 </View>
@@ -52,13 +52,13 @@ export default function PostDetail() {
                 </View>
             </View>
             <View style={styles.HeartNumberStyle}>
-                <Text>{HomeData.PostDetail[0].HeartNumber}</Text>
+                <Text>{Post.HeartNumber}</Text>
             </View>
             <View style={styles.ContentStyle}>
                 <Text style={styles.PersonIdStyle}>
-                    {HomeData.PostDetail[0].PersonId}
+                    {Post.PersonId}
                 </Text>
-                <Text>{HomeData.PostDetail[0].Content}</Text>
+                <Text>{Post.Content}</Text>
             </View>
         </View> 
     </ScrollView>
@@ -71,6 +71,11 @@ const styles = StyleSheet.create({
     width:24,
     height:24,
   },
+  iconMessageStyle: {
+    width:25,
+    height:25,
+    marginTop:2,
+  },
   iconStyle20: {
     width:20,
     height:20,
@@ -80,14 +85,14 @@ const styles = StyleSheet.create({
     height:18,
   },
   PostContainerStyle: {
-
+    paddingBottom:12,
   },
   PostHeaderStyle: {
     height:50,
     justifyContent:"space-between",
     alignItems:'center',
     flexDirection:'row',
-    paddingLeft:12,
+    paddingLeft:6,
     paddingRight:18,
     paddingTop:2
   },

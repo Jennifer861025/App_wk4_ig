@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image ,FlatList} from 'react-native';
+import { StyleSheet, Text, View, Image ,FlatList,TouchableOpacity} from 'react-native';
 import HomeData from "../json/Home.json";
 import PostDetailJs from "../components/PostDetail"
 
@@ -15,27 +15,54 @@ export default function HomeScreen({navigation}) {
           style={styles.InstagramStyle}
           source={{uri:HomeData.header[0].InstagramUrl}}
         />
-        <Image
-          style={styles.iconStyle24}
-          source={{uri:HomeData.header[0].MessageUrl}}
-        />
+        <TouchableOpacity
+            onPress={() => navigation.navigate('Message')}
+        >
+          <Image
+            style={styles.iconStyle24}
+            source={{uri:HomeData.header[0].MessageUrl}}
+          />
+        </TouchableOpacity>
       </View>
-      <PostDetailJs/>
-      {/* <FlatList
+      {/* <PostDetailJs/> */}
+      <FlatList
         data={HomeData.PostDetail}
         renderItem={({ item }) => 
         <PostDetailJs 
-          album={item}       
+          Post={item}       
         />}
         keyExtractor={item => item.PersonId}
-      /> */}
+      />
+      <View style={styles.HomeFooterStyle}>
+        <Image
+          style={styles.iconStyle24}
+          source={{uri:HomeData.Icon[0].Home}}
+        />
+        <Image
+          style={styles.iconStyle24}
+          source={{uri:HomeData.Icon[0].Search}}
+        />
+        <Image
+          style={styles.iconStyle24}
+          source={{uri:HomeData.Icon[0].Add}}
+        />
+        <Image
+          style={styles.iconStyle24}
+          source={{uri:HomeData.Icon[0].Heart}}
+        />
+        <Image
+          style={styles.iconStyle30}
+          source={{uri:HomeData.Icon[0].Person}}
+        />
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container:{
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    flex:1,
   },
   headerStyle: {
     backgroundColor:"#fff",
@@ -50,6 +77,10 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     elevation: 2
+  },
+  iconStyle30: {
+    width:30,
+    height:30,
   },
   iconStyle24: {
     width:24,
@@ -67,4 +98,12 @@ const styles = StyleSheet.create({
     width:100,
     height:28,
   },
+  HomeFooterStyle:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    height:40,
+    paddingLeft:15,
+    paddingRight:15
+  }
 });

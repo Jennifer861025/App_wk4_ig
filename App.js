@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from "./src/screens/HomeScreen";
+import MessageScreen from "./src/screens/MessageScreen";
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,10 @@ export default function App() {
         <Stack.Screen 
           name="Home" 
           component={HomeScreen} 
+        />
+        <Stack.Screen 
+          name="Message" 
+          component={MessageScreen} 
         />
       </Stack.Navigator>
     </NavigationContainer>
