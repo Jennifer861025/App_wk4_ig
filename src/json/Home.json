@@ -1,0 +1,16 @@
+{
+    "header":[
+        {
+            "CameraUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Camera.png?raw=true",
+            "InstagramUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Instagram.png?raw=true",
+            "MessageUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/Icons/Message.png?raw=true"
+        }
+    ],
+    "PostDetail":[
+        {
+            "PersonUrl": "https://github.com/Jennifer861025/App_wk4_ig/blob/master/assets/HomePerson/photo.jpg-3.png?raw=true",
+            "PersonId": "kaoru_0908",
+
+        }
+    ]
+}
